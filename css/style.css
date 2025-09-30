@@ -1,0 +1,39 @@
+/* 1. 전체 기본 설정 */
+
+/* 브라우저 기본 여백/패딩 제거 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 박스 크기 계산을 border 포함해서 계산 */
+}
+
+/* body 전체 설정 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    /* 굵게 - 이러면 확 티남 */
+    line-height: 1.6;
+    /* 줄 간격 */
+
+    color: #333;
+    /* 기본 글자 색 (진한 회색) */
+
+    background-color: #f5f5f5;
+    /* 배경색 (연한 회색) */
+
+}
+.container{
+   max-width: 1200px;
+    /* 최대 너비 */
+    
+    margin: 0 auto;
+    /* 가운데 정렬 */
+    
+    padding: 20px;
+    /* 안쪽 여백 */
+    
+    background-color: white;
+    /* 흰색 배경 */
+}
