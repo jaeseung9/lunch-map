@@ -282,3 +282,114 @@ hr {
     font-size: 14px;
     color: #555;
 }
+/* 태블릿 (768px 이하) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 24px;
+        padding: 20px 10px;
+    }
+    
+    header {
+        padding: 20px;
+    }
+    
+    header h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .search-box {
+        flex-direction: column;
+        /* 세로로 배치 */
+    }
+    
+    #searchInput {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+    
+    #searchBtn {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+    
+    #map {
+        height: 400px;
+        /* 지도 높이 줄이기 */
+    }
+    
+    .restaurant-item {
+        padding: 12px;
+    }
+    
+    .restaurant-item h3 {
+        font-size: 16px;
+    }
+    
+    .restaurant-item p {
+        font-size: 13px;
+    }
+}
+
+/* 모바일 (480px 이하) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 20px;
+        padding: 15px 10px;
+    }
+    
+    header h2 {
+        font-size: 16px;
+    }
+    
+    #searchInput {
+        font-size: 14px;
+        padding: 10px 12px;
+        height: 45px;
+    }
+    
+    #searchBtn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    
+    #map {
+        height: 300px;
+        /* 모바일에서 더 작게 */
+        border-radius: 5px;
+    }
+    
+    #listContainer {
+        padding: 15px;
+        min-height: 200px;
+    }
+    
+    .restaurant-item {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .restaurant-item h3 {
+        font-size: 15px;
+    }
+    
+    .restaurant-item p {
+        font-size: 12px;
+        margin: 3px 0;
+    }
+    
+    a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
