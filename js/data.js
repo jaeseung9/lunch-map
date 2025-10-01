@@ -92,7 +92,6 @@ const restaurants = [
     ["치킨커리 12000원", "가정식 왕 돈까스 12000원"],
     "images/restaurant3.jpg"
   ),
-  ,
   new Restaurant(
     8,
     "청마루한우숯불갈비",

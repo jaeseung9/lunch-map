@@ -393,3 +393,18 @@ hr {
         font-size: 14px;
     }
 }
+#randomBtn {
+    padding: 12px 30px;
+    background-color: #e74c3c;
+    /* 빨간색 */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#randomBtn:hover {
+    background-color: #c0392b;
+    /* 더 진한 빨간색 */
+}

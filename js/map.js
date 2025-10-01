@@ -145,6 +145,24 @@ function updateRestaurantList(filteredRestaurants) {
 
   listContainer.innerHTML = listHTML;
 }
+// 랜덤 음식점 추천 함수
+function recommendRandomRestaurant() {
+  // 랜덤 인덱스 선택
+  const randomIndex = Math.floor(Math.random() * restaurants.length);
+  const randomRestaurant = restaurants[randomIndex];
+
+  // 해당 음식점으로 지도 이동
+  moveToRestaurant(
+    randomRestaurant.lat,
+    randomRestaurant.lng,
+    randomRestaurant.id
+  );
+
+  // 알림 메시지
+  alert(
+    `🎉 오늘의 추천 음식점!\n\n${randomRestaurant.name}\n카테고리: ${randomRestaurant.category}`
+  );
+}
 
 // initMap 함수 수정 - 검색 버튼 이벤트 추가
 function initMap() {
@@ -180,6 +198,11 @@ function initMap() {
         searchRestaurants();
       }
     });
+
+  // 랜덤 추천 버튼 이벤트 (여기 추가)
+  document
+    .getElementById("randomBtn")
+    .addEventListener("click", recommendRandomRestaurant);
 }
 
 // 가맹점 마커 표시 함수
